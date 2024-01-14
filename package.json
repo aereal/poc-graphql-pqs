@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pqs-manifest:generate": "generate-persisted-query-manifest --config etc/pqs.config.json"
   },
   "dependencies": {
     "@apollo/client": "^3.8.9",

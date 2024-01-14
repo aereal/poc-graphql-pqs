@@ -1,0 +1,6 @@
+{
+  "documents": [
+    "app/**/*.{ts,tsx,graphql,gqp}"
+  ],
+  "output": "pqs-manifest.json"
+}
