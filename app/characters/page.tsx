@@ -1,7 +1,8 @@
-import { gql } from "../../src/__generated__/gql";
+import gql from "graphql-tag";
 import { getClient } from "../../src/apollo-client";
+import { GetCharactersQuery } from "./page.gen";
 
-export const GetCharacters = gql(`
+const getCharactersQuery = gql`
   query GetCharacters($first: UnsignedInt!) {
     characters(first: $first) {
       pageInfo {
@@ -13,11 +14,11 @@ export const GetCharacters = gql(`
       }
     }
   }
-`);
+`;
 
 const Page = async () => {
-  const { loading, error, data } = await getClient().query({
-    query: GetCharacters,
+  const { loading, error, data } = await getClient().query<GetCharactersQuery>({
+    query: getCharactersQuery,
     variables: { first: 10 },
   });
   return (
