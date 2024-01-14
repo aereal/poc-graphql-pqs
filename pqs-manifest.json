@@ -1,0 +1,12 @@
+{
+  "format": "apollo-persisted-query-manifest",
+  "version": 1,
+  "operations": [
+    {
+      "id": "61d9aff889e21078da0727a84fec24572e9effe1d31c0cd60dca10de64a4f864",
+      "name": "GetCharacters",
+      "type": "query",
+      "body": "query GetCharacters($first: UnsignedInt!) {\n  characters(first: $first) {\n    pageInfo {\n      hasNext\n      __typename\n    }\n    nodes {\n      name\n      element\n      __typename\n    }\n    __typename\n  }\n}"
+    }
+  ]
+}
