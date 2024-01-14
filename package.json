@@ -12,6 +12,7 @@
   "dependencies": {
     "@apollo/client": "^3.8.9",
     "@apollo/experimental-nextjs-app-support": "^0.6.0",
+    "@apollo/persisted-query-lists": "^1.0.0",
     "graphiql": "^3.1.0",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
